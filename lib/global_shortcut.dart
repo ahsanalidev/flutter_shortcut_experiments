@@ -24,6 +24,8 @@ class GlobalShortcut extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FocusableActionDetector(
+      focusNode: focusNode,
+      autofocus: true,
       shortcuts: _shortcuts,
       actions: _actions,
       child: child,
